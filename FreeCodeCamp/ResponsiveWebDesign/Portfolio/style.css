@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+ul{
+    list-style:none;
+}
+
+#header{
+    background: #ff541f;
+    overflow: hidden;
+    position: fixed;
+    width:100%;
+}
+
+#header nav ul{
+    display: flex;
+    padding: 1rem;
+    float: right;
+}
+
+#header nav ul li{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+#header nav ul li a{
+    text-decoration: none;
+    color: #0A0A0A;
+    font-weight: bold;
+}
+
+#welcome{
+    height: 100vh;
+    background: #0A0A0A;
+    color:#ff541f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome h1{
+    font-size: 4rem;
+    color: white    
+}
+
+#main{
+    background: #ff541f;
+}
+
+#main>h3{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects img{
+    width:300px;
+    border-radius: 5px;
+}
+
+.projects .project{
+    text-align: center;
+    padding-bottom:1rem;
+    background: #0A0A0A;
+    margin: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.projects .project h3,
+.projects .project p{
+    padding: 0.5rem;
+}
+
+.projects .project a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff541f;
+    background: rgba( 255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.projects .project a:hover{
+    background-color: #ff541f;
+    color: black;
+}
+
+#contacts{
+    background: #0A0A0A;
+    color: #ff541f;
+    text-align: center;
+}
+
+#contacts h3{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center  ;
+}
+
+#contact a{
+    margin-right: 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    color:#fff;
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+@media(max-width:660px){
+    .projects{
+        flex-direction: column;
+        width: 333px;
+        margin: 0 auto;
+    }
+
+    #contact{
+        display: inline-block;
+        margin-bottom:1rem ;
+        margin-right: 0px !important;
+    }
+}

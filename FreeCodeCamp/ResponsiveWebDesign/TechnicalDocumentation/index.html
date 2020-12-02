@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>PHP Documentation</h1>
+        </header>
+        <hr>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <hr>
+            <li>
+                <a class="nav-link" href="#Basic_syntax">Basic syntax</a>
+            </li>
+            <hr>
+            <li>
+                <a class="nav-link" href="#Types">Types</a>
+            </li>
+            <hr>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <hr>
+            <li>
+                <a class="nav-link" href="#Constants">Constants</a>
+            </li>
+            <hr>
+        </ul>
+    </nav>
+    
+    <main id="main-doc">
+        <section class="main-section">
+            <header id="Introduction">
+                <h2>Introduction</h2>
+            </header>
+            <article>
+                <p>
+                    PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.
+                </p>
+                <code>
+                    echo "<p>Olá Mundo</p>";
+                </code>
+                <p>
+                    Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code that does "something" (in this case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in special start and end processing instructions <?php and ?> that allow you to jump into and out of "PHP mode."
+                </p>
+                <ul>
+                    <li>Reiciendis sit et id alias.</li>
+                    <li>Commodi, ullam! Quibusdam, molestias sint!</li>
+                    <li>Doloribus perspiciatis asperiores et vero.</li>
+                </ul>
+            </article>
+            </section>
+
+        <section class="main-section">
+            <header>
+                <h2 id="Basic_syntax">Basic syntax</h2>
+            </header>
+            <article>
+                <p>When PHP parses a file, it looks for opening and closing tags, which are <?php and ?> which tell PHP to start and stop interpreting the code between them. Parsing in this manner allows PHP to be embedded in all sorts of different documents, as everything outside of a pair of opening and closing tags is ignored by the PHP parser.</p>
+                <code>
+                    echo "<p>Olá Mundo</p>";
+                </code>
+                <p>Short tags (example three) are available by default but can be disabled either via the short_open_tag php.ini configuration file directive, or are disabled by default if PHP is built with the --disable-short-tags configuration.</p>
+            </article>
+        </section>
+
+        <section class="main-section">
+            <header>
+                <h2 id="Types">Types</h2>
+            </header>
+            <article>
+                    <p>
+                        PHP supports ten primitive types.Four scalar types:bool int float (floating-point number, aka double) string
+                    </p>
+                    <code>
+                        echo "<p>Olá Mundo</p>";
+                    </code>
+                    <p>Some references to the type "double" may remain in the manual. Consider double the same as float; the two names exist only for historic reasons.</p>
+                    <ul>
+                        <li>Reiciendis sit et id alias.</li>
+                        <li>Doloribus perspiciatis asperiores et vero.</li>
+                    </ul>
+            </article>
+            </section>
+
+            <section class="main-section">
+            <header>
+                <h2 id="Variables">Variables</h2>
+            </header>
+            <article>
+                <p>Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$</p>
+                <code>
+                    $var = 'Bob'; $Var = 'Joe'; echo "$var, $Var";      // outputs "Bob, Joe"
+                </code>
+                <p>Note: $this is a special variable that can't be assigned. Prior to PHP 7.1.0, indirect assignment (e.g. by using variable variables) was possible.</p>
+            </article>
+        </section>
+
+        <section class="main-section">
+            <header>
+                <h2 id="Constants">Constants</h2>
+            </header>
+            <article>
+                <p>A constant is an identifier (name) for a simple value. As the name suggests, that value cannot change during the execution of the script (except for magic constants, which aren't actually constants). Constants are case-sensitive. By convention, constant identifiers are always uppercase.
+                </p>
+                <code>
+                    define("FOO",     "something"); define("FOO2",    "something else");
+                    define("FOO_BAR", "something more");
+                </code>
+                <p>The name of a constant follows the same rules as any label in PHP. A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thusly: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$</p>
+                <ul>
+                    <li>Reiciendis sit et id alias.</li>
+                </ul>
+            </article>
+            </section>
+    </main>
+</body>
+</html>

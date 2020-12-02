@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+width: 40%;
+margin: 0 auto;
+background-color: #393939;
+color: #fff;
+font-family: Roboto;
+}
+
+#apresentation{
+    text-align:center;
+    color: #1b97d2;
+}
+
+#apresentation #title{
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+#apresentation #description{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+#survey-form{
+    width:80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+#survey-form label{
+    display: block;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form input[type="submit"],
+#survey-form textarea{
+    width:100%;
+    padding:0.75rem;
+    font-size:1rem;
+    border-radius: 10px;
+}
+
+#dropdown{
+    width:100%;
+    padding:0.75rem;
+    font-size:1rem;
+    border-radius: 10px;
+}
+
+.form-group{
+    margin: 1rem;
+}
+
+#submit{
+    background-color: #1b97d2;
+}
+
+
