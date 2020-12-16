@@ -48,6 +48,10 @@ body{
     transition: all ease 0.3 ease;
 }
 
+.wrapper label span:before{
+    content: 'Turn off';
+}
+
 .wrapper label span:hover{
     background: white;
     color: #111;
@@ -82,6 +86,10 @@ body{
 
 #btn:checked ~ img#bulb-on{
     animation: none;
+}
+
+#btn:checked ~ label span:before{
+    content: 'Turn on';
 }
 
 .wrapper #btn{
