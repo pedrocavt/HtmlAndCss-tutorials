@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("./bg1.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.wrapped nav{
+    display: flex;
+    justify-content: space-between; 
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px 100px;
+    align-items: center;
+}
+.wrapped nav .logo img{
+    display: block;
+    width: 180px;
+    height: 100%;
+}
+
+.wrapped nav ul{
+    display: flex;
+}
+
+.wrapped nav ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+
+.wrapped nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 10px
+}
+
+.wrapped nav ul li a.active,
+.wrapped nav ul li a:hover{
+    background: crimson;
+    border-radius: 5px;
+}
+
+.main{
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1{
+    font-size: 80px;
+    color: white;
+    font-family: sans-serif;
+    width: 900px;
+}
+
+.main h2{
+    font-size: 80px;
+    color: white;
+    font-family: sans-serif;
+    width: 895px;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.buttons button{
+    background: crimson;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 20px
+}
